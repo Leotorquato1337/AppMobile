@@ -45,7 +45,7 @@ export default function Checkout() {
 
       <Text style={styles.title}>Finalize o seu pedido</Text>
 
-      {/* Card do Serviço Selecionado */}
+
       <View style={styles.card}>
         <Image source={{ uri: servico.imagem }} style={styles.image} />
         <Text style={styles.serviceName}>{servico.nome}</Text>
@@ -55,7 +55,7 @@ export default function Checkout() {
         </Text>
       </View>
 
-      {/* Campos de entrada */}
+
       <TextInput
         style={styles.input}
         placeholder="Seu Nome"

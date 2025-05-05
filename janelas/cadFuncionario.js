@@ -84,7 +84,6 @@ function CadastroCliente() {
       style={styles.wrapper}
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
-      {/* Botão de Voltar no topo */}
       <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
         <Text style={styles.backButtonText}>← Voltar</Text>
       </TouchableOpacity>
@@ -154,7 +153,6 @@ function CadastroCliente() {
         />
       </ScrollView>
 
-      {/* Botões fixos no rodapé */}
       <View style={styles.footer}>
         <TouchableOpacity style={styles.button} onPress={inserirCliente}>
           <Text style={styles.buttonText}>Enviar</Text>

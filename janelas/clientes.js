@@ -8,7 +8,7 @@ import {
   Image,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { MaterialIcons } from '@expo/vector-icons'; // Ícone nativo do Expo
+import { MaterialIcons } from '@expo/vector-icons'; 
 
 export default function TelaServicos() {
   const navigation = useNavigation();

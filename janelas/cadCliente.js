@@ -15,7 +15,7 @@ import { useNavigation } from '@react-navigation/native';
 import { useState } from 'react';
 import { auth } from '../factory/firebase';
 import conexaotabelas from '../factory/firebase';
-import { MaterialIcons } from '@expo/vector-icons'; // Importando o MaterialIcons
+import { MaterialIcons } from '@expo/vector-icons'; 
 
 export default function CadastroCliente() {
   const [email, pegaEmail] = useState('');
@@ -34,7 +34,7 @@ export default function CadastroCliente() {
     }
 
     auth
-      .createUserWithEmailAndPassword(email, senha) // Usando 'auth' importado
+      .createUserWithEmailAndPassword(email, senha)
       .then(() => {
         alert('Cadastrado com sucesso');
         pegaEmail('');
@@ -115,7 +115,7 @@ export default function CadastroCliente() {
               onChangeText={pegaSenha}
               placeholder="Senha"
               placeholderTextColor="#333"
-              secureTextEntry={!isPasswordVisible} // Exibe ou oculta a senha
+              secureTextEntry={!isPasswordVisible}
             />
             <TouchableOpacity
               onPress={() => setIsPasswordVisible(!isPasswordVisible)}
@@ -187,7 +187,6 @@ export default function CadastroCliente() {
               alterar os termos e avisaremos.
             </Text>
 
-            {/* Termos LGPD - Português */}
             <Text style={styles.title}>
               📌 Termo de Consentimento – LGPD (Português)
             </Text>
@@ -220,7 +219,6 @@ export default function CadastroCliente() {
 
             <Text style={styles.separator}>──────────────────────────────</Text>
 
-            {/* Termos LGPD - English */}
             <Text style={styles.title}>📌 Consent Term – LGPD (English)</Text>
             <Text style={styles.text}>
               The General Data Protection Law (Law No. 13.709/2018), known as
@@ -250,7 +248,6 @@ export default function CadastroCliente() {
 
             <Text style={styles.separator}>──────────────────────────────</Text>
 
-            {/* Termos LGPD - Español */}
             <Text style={styles.title}>
               📌 Término de Consentimiento – LGPD (Español)
             </Text>
@@ -287,7 +284,7 @@ export default function CadastroCliente() {
           <Button
             title="Cadastrar"
             onPress={Cadastraremail}
-            disabled={!isChecked} // Desabilita o botão se não estiver marcado
+            disabled={!isChecked} 
             color="#007796"
           />
         </View>

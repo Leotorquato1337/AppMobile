@@ -1,10 +1,6 @@
-//resgatar senha
-//controle de acesso e conformidade LGPD
 
 import { NavigationContainer } from '@react-navigation/native';
-
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 import CadCliente from './janelas/cadCliente';
 import CadServico from './janelas/cadServico';
 import Menu from './janelas/menu';

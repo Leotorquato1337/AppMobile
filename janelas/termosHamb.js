@@ -6,10 +6,10 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from 'react-native';
-import { useNavigation } from '@react-navigation/native'; // 👈 Import necessário
+import { useNavigation } from '@react-navigation/native';
 import { MaterialIcons } from '@expo/vector-icons';
 const LgpdScreen = () => {
-  const navigation = useNavigation(); // 👈 Hook de navegação
+  const navigation = useNavigation(); 
 
   return (
     <View style={styles.container}>

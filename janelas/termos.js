@@ -7,13 +7,13 @@ export default function TermosDeUso() {
   const route = useRoute();
   const navigation = useNavigation();
 
-  // Pega o e-mail da rota, mas não exibe na tela
+
   const { userEmail } = route.params || {};
 
-  // Função chamada quando o botão for pressionado
+
   const handleAceitar = () => {
     setAceitou(true);
-    navigation.navigate('menu', { userEmail }); // Navega para a tela principal após aceitar os termos
+    navigation.navigate('menu', { userEmail }); 
   };
 
   return (
@@ -133,12 +133,12 @@ export default function TermosDeUso() {
         </Text>
       </ScrollView>
 
-      {/* Botão de aceitar */}
+
       <View style={styles.buttonContainer}>
         <Button
           title={aceitou ? 'Termos Aceitos' : 'Aceitar Termos'}
           onPress={handleAceitar}
-          disabled={aceitou} // Desabilita o botão depois de clicar
+          disabled={aceitou} 
         />
       </View>
     </View>

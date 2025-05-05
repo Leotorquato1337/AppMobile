@@ -12,7 +12,7 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 import Firebase from 'firebase';
 import 'firebase/firestore';
 import 'firebase/auth';
-import { MaterialIcons } from '@expo/vector-icons'; // Para usar o ícone de seta
+import { MaterialIcons } from '@expo/vector-icons';
 
 export default function EditarPerfilScreen() {
   const navigation = useNavigation();
@@ -21,8 +21,8 @@ export default function EditarPerfilScreen() {
 
   const [nome, setNome] = useState('');
   const [telefone, setTelefone] = useState('');
-  const [senhaAtual, setSenhaAtual] = useState(''); // Novo estado para senha atual
-  const [novaSenha, setNovaSenha] = useState(''); // Novo estado para nova senha
+  const [senhaAtual, setSenhaAtual] = useState(''); 
+  const [novaSenha, setNovaSenha] = useState(''); 
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -52,7 +52,7 @@ export default function EditarPerfilScreen() {
   }, [email]);
 
   const atualizarPerfil = async () => {
-    // Verifica se todos os campos estão preenchidos
+
     if (
       !nome ||
       !telefone ||
@@ -77,7 +77,7 @@ export default function EditarPerfilScreen() {
         });
       }
 
-      // Se o usuário fornecer senha, deve verificar a senha atual e depois atualizar a senha
+
       if (senhaAtual.trim() !== '' && novaSenha.trim() !== '') {
         const user = Firebase.auth().currentUser;
         const credential = Firebase.auth.EmailAuthProvider.credential(
@@ -85,28 +85,28 @@ export default function EditarPerfilScreen() {
           senhaAtual
         );
 
-        // Reautenticar o usuário
+
         await user.reauthenticateWithCredential(credential);
 
-        // Atualizar a senha
+
         await user.updatePassword(novaSenha);
 
-        // Alerta de sucesso na troca de senha
+
         Alert.alert('Sucesso', 'Senha alterada com sucesso!');
       }
 
-      // Alerta de sucesso no update de dados
+
       Alert.alert('Sucesso', 'Dados alterados com sucesso');
       navigation.goBack();
     } catch (error) {
       console.error('Erro ao atualizar perfil:', error);
 
-      // Se a senha atual estiver errada
+
       if (error.code === 'auth/wrong-password') {
         Alert.alert('Erro', 'Senha incorreta');
       }
 
-      // Caso precise de reautenticação
+
       else if (error.code === 'auth/requires-recent-login') {
         Alert.alert(
           'Reautenticação necessária',
@@ -132,7 +132,7 @@ export default function EditarPerfilScreen() {
 
   return (
     <View style={styles.container}>
-      {/* Botão de voltar */}
+
       <TouchableOpacity
         style={styles.backButton}
         onPress={() => navigation.goBack()}>
@@ -183,7 +183,7 @@ export default function EditarPerfilScreen() {
         <Text style={styles.buttonText}>Salvar</Text>
       </TouchableOpacity>
 
-      {/* Botão de excluir conta */}
+
       <TouchableOpacity
         style={[styles.button, styles.deleteButton]}
         onPress={() => navigation.navigate('confirmarExclusao')}>
@@ -225,7 +225,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   deleteButton: {
-    backgroundColor: '#d9534f', // Cor vermelha para destaque
+    backgroundColor: '#d9534f',
     marginTop: 20,
   },
   buttonText: {

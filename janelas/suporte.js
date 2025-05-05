@@ -11,8 +11,8 @@ import {
   SafeAreaView,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import conexaotabelas from '../factory/firebase'; // Certifique-se de importar corretamente
-import { MaterialIcons } from '@expo/vector-icons'; // Importando o MaterialIcons
+import conexaotabelas from '../factory/firebase'; 
+import { MaterialIcons } from '@expo/vector-icons'; 
 
 
 

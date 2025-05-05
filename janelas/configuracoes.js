@@ -9,12 +9,12 @@ import {
 } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import { useRoute } from '@react-navigation/native';
-import conexaotabelas from '../factory/firebase'; // mesma instância usada no cadastro
+import conexaotabelas from '../factory/firebase';
 import { useNavigation } from '@react-navigation/native';
-import { MaterialIcons } from '@expo/vector-icons'; // Importando o MaterialIcons
+import { MaterialIcons } from '@expo/vector-icons'; 
 export default function ConfiguracoesNotificacaoScreen() {
   const route = useRoute();
-  const emailUsuario = route.params?.email; // pegando o e-mail passado via navegação
+  const emailUsuario = route.params?.email; 
 
   const [notificacoesAtivas, setNotificacoesAtivas] = useState(true);
   const [somNotificacao, setSomNotificacao] = useState(true);
@@ -40,7 +40,7 @@ export default function ConfiguracoesNotificacaoScreen() {
       tipoNotificacao: tipoNotificacao,
     };
 
-    // Busca o documento do cliente pelo e-mail e atualiza os dados
+
     conexaotabelas
       .collection('cadCliente')
       .where('email', '==', emailUsuario)

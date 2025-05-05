@@ -7,7 +7,7 @@ import 'firebase/firestore';
 
 export default function ConfirmarExclusaoScreen() {
   const navigation = useNavigation();
-  const email = Firebase.auth().currentUser.email; // Pega o e-mail do usuário autenticado
+  const email = Firebase.auth().currentUser.email; 
 
   const excluirConta = async () => {
     Alert.alert(
@@ -25,7 +25,7 @@ export default function ConfirmarExclusaoScreen() {
             try {
               const user = Firebase.auth().currentUser;
 
-              // Exclui os dados do usuário da coleção 'cadCliente'
+
               const snapshot = await Firebase.firestore()
                 .collection('cadCliente')
                 .where('email', '==', email)
@@ -33,17 +33,17 @@ export default function ConfirmarExclusaoScreen() {
 
               if (!snapshot.empty) {
                 const userDoc = snapshot.docs[0];
-                await userDoc.ref.delete(); // Exclui os dados do Firestore
+                await userDoc.ref.delete();
               }
 
-              // Exclui a conta de autenticação
-              await user.delete(); // Exclui a conta do Firebase Authentication
+
+              await user.delete(); 
 
               Alert.alert(
                 'Conta excluída',
                 'Sua conta foi excluída com sucesso.'
               );
-              navigation.navigate('splash'); // Redireciona o usuário para a tela anterior
+              navigation.navigate('splash'); 
             } catch (error) {
               console.error('Erro ao excluir conta:', error);
               Alert.alert('Erro', 'Não foi possível excluir sua conta.');
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     color: 'gray',
   },
   button: {
-    backgroundColor: '#d9534f', // Cor vermelha para destaque
+    backgroundColor: '#d9534f', 
     borderRadius: 6,
     textAlign: 'center',
     alignItems: 'center',

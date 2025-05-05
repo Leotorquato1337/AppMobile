@@ -1,35 +1,11 @@
-Teste em: https://snack.expo.dev/@leotorquato1337/appobras
+# Sample Snack app
 
-Aplicativo mobile desenvolvido com JavaScript e React Native, com o objetivo de conectar usuários a profissionais qualificados para a realização de serviços domésticos. A aplicação foi construída com foco em performance, usabilidade e conformidade com a LGPD, garantindo segurança e privacidade dos dados dos usuários.
+Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
 
-Funcionalidades: 
+When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
 
-Cadastro e gerenciamento de clientes, profissionais e serviços
+All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
 
-Login e recuperação de senha
+If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
 
-Visualização e edição de perfil
-
-Exibição de termos de uso e política de privacidade
-
-Sessões de suporte e dúvidas frequentes
-
-Tela de configurações
-
-Tela de checkout para finalização de serviços
-
-Exclusão de conta com confirmação
-
-Splash screen na inicialização
-
-Navegação fluida entre telas com React Navigation
-
-Conformidade com a LGPD
-
-Tecnologias utilizadas: 
-
-JavaScript
-
-React Native
-
-React Navigation
+Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
