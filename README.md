@@ -5,12 +5,9 @@ Caça Obras é um aplicativo mobile desenvolvido em React Native, com o objetivo
 ## Funcionalidades
 
 - Cadastro e login de usuários e prestadores de serviço
-- Listagem de serviços disponíveis, por categoria
-- Busca por profissionais com filtros
-- Visualização de perfis de prestadores com informações detalhadas
-- Solicitação de orçamentos diretamente pelo app
-- Geolocalização e exibição de serviços próximos (se aplicável)
-- Integração com Firebase para autenticação e banco de dados
+- Listagem de serviços disponíveis.
+- Solicitação de orçamentos diretamente pelo app.
+- Integração com Firebase para autenticação e banco de dados.
 
 ## Tecnologias Utilizadas
 
