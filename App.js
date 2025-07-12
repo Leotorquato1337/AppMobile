@@ -1,26 +1,37 @@
-
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import CadCliente from './janelas/cadCliente';
-import CadServico from './janelas/cadServico';
-import Menu from './janelas/menu';
+import CadCliente from './janelascliente/cadCliente';
+import CadServico from './janelascliente/cadServico';
+import Menu from './janelascliente/menu';
 import Splash from './janelas/splash';
 import TelaLogin from './janelas/telaLogin';
-import Clientes from './janelas/clientes';
+import Clientes from './janelascliente/clientes';
 import Profissionais from './janelas/profissionais';
-import Perfil from './janelas/meuPerfil';
-import EditarPerfil from './janelas/editarPerfil';
-import Checkout from './janelas/checkout';
-import CadFuncionario from './janelas/cadFuncionario';
-import EsqueciSenha from './janelas/esqueceusenha';
-import MenuModal from './janelas/menuModal';
-import Termos from './janelas/termos';
-import TermosHamb from './janelas/termosHamb';
+import Perfil from './janelascliente/meuPerfil';
+import EditarPerfil from './janelascliente/editarPerfil';
+import Checkout from './janelascliente/checkout';
+import CadFuncionario from './janelascliente/cadFuncionario';
+import EsqueciSenha from './janelascliente/esqueceusenha';
+import MenuModal from './janelascliente/menuModal';
+import Termos from './janelascliente/termos';
+import TermosHamb from './janelascliente/termosHamb';
 import Configuracoes from './janelas/configuracoes';
-import Suporte from './janelas/suporte';
-import Duvidas from './janelas/duvidas';
-import Sobre from './janelas/sobre';
-import ConfirmarExclusao from './janelas/confirmarExclusao';
+import Suporte from './janelascliente/suporte';
+import Duvidas from './janelascliente/duvidas';
+import Sobre from './janelascliente/sobre';
+import ConfirmarExclusao from './janelascliente/confirmarExclusao';
+import TermosFunc from './janelascolaborador/termosFunc';
+import MenuFunc from './janelascolaborador/menuFunc';
+import MenuModalFunc from './janelascolaborador/menuModalFunc';
+import ServicosAtuais from './janelascolaborador/servicosAtuais';
+import SolicitacaoServico from './janelascolaborador/solicitacaoServico';
+import ServicosRealizados from './janelascolaborador/servicosRealizados';
+import PerfilFunc from './janelascolaborador/perfilFunc';
+import FormasPagamento from './janelascliente/formasPagamento';
+import HistoricoServicos from './janelascliente/historicoServicos';
+import MeusAgendamentos from './janelascliente/meusAgendamentos';
+import PerfilProfissional from './janelas/perfilProfissional';
+import ServicosFinalizados from './janelascolaborador/servicosFinalizados';
 
 const Stack = createNativeStackNavigator();
 
@@ -127,6 +138,66 @@ export default function App() {
           name="confirmarExclusao"
           options={{ headerShown: false }}
           component={ConfirmarExclusao}
+        />
+        <Stack.Screen
+          name="termosFunc"
+          options={{ headerShown: false }}
+          component={TermosFunc}
+        />
+        <Stack.Screen
+          name="menuFunc"
+          options={{ headerShown: false }}
+          component={MenuFunc}
+        />
+        <Stack.Screen
+          name="menuModalFunc"
+          options={{ headerShown: false }}
+          component={MenuModalFunc}
+        />
+        <Stack.Screen
+          name="servicosAtuais"
+          options={{ headerShown: false }}
+          component={ServicosAtuais}
+        />
+        <Stack.Screen
+          name="solicitacaoServico"
+          options={{ headerShown: false }}
+          component={SolicitacaoServico}
+        />
+        <Stack.Screen
+          name="servicosRealizados"
+          options={{ headerShown: false }}
+          component={ServicosRealizados}
+        />
+        <Stack.Screen
+          name="perfilFunc"
+          options={{ headerShown: false }}
+          component={PerfilFunc}
+        />
+        <Stack.Screen
+          name="formasPagamento"
+          options={{ headerShown: false }}
+          component={FormasPagamento}
+        />
+        <Stack.Screen
+          name="historicoServicos"
+          options={{ headerShown: false }}
+          component={HistoricoServicos}
+        />
+        <Stack.Screen
+          name="meusAgendamentos"
+          options={{ headerShown: false }}
+          component={MeusAgendamentos}
+        />
+        <Stack.Screen
+          name="perfilProfissional"
+          options={{ headerShown: false }}
+          component={PerfilProfissional}
+        />
+        <Stack.Screen
+          name="servicosFinalizados"
+          options={{ headerShown: false }}
+          component={ServicosFinalizados}
         />
       </Stack.Navigator>
     </NavigationContainer>

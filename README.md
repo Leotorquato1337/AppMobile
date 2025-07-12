@@ -1,17 +1,11 @@
-# Caça Obras
+# Sample Snack app
 
-Caça Obras é um aplicativo mobile desenvolvido em React Native, com o objetivo de conectar usuários a prestadores de serviços autônomos, como pedreiros, eletricistas, encanadores, pintores, entre outros. A plataforma oferece uma solução prática para quem busca serviços de manutenção residencial ou comercial com agilidade e confiança.
+Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
 
-## Funcionalidades
+When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
 
-- Cadastro e login de usuários e prestadores de serviço
-- Listagem de serviços disponíveis.
-- Solicitação de orçamentos diretamente pelo app.
-- Integração com Firebase para autenticação e banco de dados.
+All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
 
-## Tecnologias Utilizadas
+If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
 
-- React Native
-- Firebase (Authentication, Firestore, Storage)
-- React Navigation
-- Expo
+Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).

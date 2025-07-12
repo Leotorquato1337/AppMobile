@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "appobras",
-    "slug": "snack-683584e1-931b-4a1e-b0ff-4e44a3e9e48a",
+    "slug": "snack-4b29e76d-5b84-4fc9-911c-df11cf61ac44",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "edgeToEdgeEnabled": true
     },
     "web": {
       "favicon": "./assets/favicon.png"

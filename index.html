@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Caça Obras - Plataforma de Obras e Reformas</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f2a654; /* laranja suave */
+      color: #000000; /* preto */
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #f2a654; /* laranja suave igual ao body */
+      padding: 20px 0;
+      text-align: center;
+      color: #000000; /* preto */
+      border-radius: 8px;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: #000000; /* nome do app em preto */
+    }
+
+    header img.logo {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    hr.separador {
+      border: none;
+      border-bottom: 2px solid #000000;
+      max-width: 960px;
+      margin: 0 auto 30px auto;
+    }
+
+    section {
+      background-color: #fff8e1; /* fundo bem claro */
+      padding: 25px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      color: #000;
+    }
+
+    section h2 {
+      color: #000000; /* preto */
+      margin-bottom: 20px;
+      font-size: 2rem;
+      border-bottom: 2px solid #000000;
+      padding-bottom: 8px;
+    }
+
+    /* Lista de serviços */
+    ul.servicos-lista {
+      list-style: none;
+      columns: 2;
+      gap: 15px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    ul.servicos-lista li::before {
+      content: "✓";
+      color: #f2a654;
+      margin-right: 8px;
+      font-weight: bold;
+    }
+
+    /* Profissionais */
+    .profissionais-lista {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .profissional {
+      background-color: #f9f4e6;
+      border-radius: 8px;
+      padding: 15px 20px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      color: #000;
+    }
+
+    .profissional h3 {
+      color: #000000; /* nome do profissional em preto */
+      margin-bottom: 8px;
+      font-size: 1.3rem;
+    }
+
+    .competencias {
+      font-size: 0.95rem;
+      color: #444;
+      margin-left: 10px;
+      list-style-type: disc;
+    }
+
+    /* Informações do app */
+    .info-app p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #000;
+    }
+
+    .info-app strong {
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #222;
+      border-top: 1px solid #ccc;
+      background-color: #fff8e1;
+    }
+
+    a {
+      color: #f2a654;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      ul.servicos-lista {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo Caça Obras" class="logo" />
+    <h1>Caça Obras</h1>
+  </header>
+
+  <hr class="separador" />
+
+  <div class="container">
+    <section>
+      <h2>Serviços Disponíveis</h2>
+      <ul class="servicos-lista">
+        <li>Reforma de Banheiro</li>
+        <li>Pintura de Casa</li>
+        <li>Instalação de Ar Condicionado</li>
+        <li>Manutenção de Jardim</li>
+        <li>Paisagismo</li>
+        <li>Instalação de Irrigação</li>
+        <li>Reforma Hidráulica</li>
+        <li>Reparo de Fiação Elétrica</li>
+        <li>Instalação de Iluminação</li>
+        <li>Eletricista Residencial</li>
+        <li>Troca de Lâmpadas e Reatores</li>
+        <li>Instalação de Cerca Elétrica</li>
+        <li>Limpeza de Calhas</li>
+        <li>Instalação de Luz Solar</li>
+        <li>Reparos de Telhado</li>
+        <li>Montagem de Móveis</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Profissionais em Destaque</h2>
+      <div class="profissionais-lista">
+        <article class="profissional">
+          <h3>Lucas Silva</h3>
+          <p><strong>Competências:</strong></p>
+          <ul class="competencias">
+            <li>Reforma de Banheiro</li>
+            <li>Pintura de Casa</li>
+            <li>Montagem de Móveis</li>
+          </ul>
+        </article>
+
+        <article class="profissional">
+          <h3>Mariana Oliveira</h3>
+          <p><strong>Competências:</strong></p>
+          <ul class="competencias">
+            <li>Instalação de Ar Condicionado</li>
+            <li>Manutenção de Jardim</li>
+            <li>Paisagismo</li>
+          </ul>
+        </article>
+
+        <article class="profissional">
+          <h3>Pedro Santos</h3>
+          <p><strong>Competências:</strong></p>
+          <ul class="competencias">
+            <li>Reparo de Fiação Elétrica</li>
+            <li>Eletricista Residencial</li>
+            <li>Troca de Lâmpadas e Reatores</li>
+            <li>Instalação de Iluminação</li>
+          </ul>
+        </article>
+
+        <article class="profissional">
+          <h3>Ana Costa</h3>
+          <p><strong>Competências:</strong></p>
+          <ul class="competencias">
+            <li>Reforma Hidráulica</li>
+            <li>Instalação de Cerca Elétrica</li>
+            <li>Limpeza de Calhas</li>
+          </ul>
+        </article>
+
+        <article class="profissional">
+          <h3>João Pereira</h3>
+          <p><strong>Competências:</strong></p>
+          <ul class="competencias">
+            <li>Instalação de Luz Solar</li>
+            <li>Instalação de Irrigação</li>
+            <li>Reparos de Telhado</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="info-app">
+      <h2>Sobre o Aplicativo</h2>
+      <p><strong>Nome do Aplicativo:</strong> Caça Obras</p>
+      <p><strong>Fabricante:</strong> Desk Solutions</p>
+      <p><strong>Versão:</strong> 1.3.3.7</p>
+      <p><strong>Distribuição:</strong> Google Play Store, Apple App Store</p>
+      <p><strong>Licença:</strong> Licença proprietária. Todos os direitos reservados.</p>
+      <p><strong>Data de Lançamento:</strong> Maio de 2025</p>
+      <p>
+        <strong>Descrição:</strong> O Caça Obras é uma plataforma inovadora desenvolvida para facilitar a busca e o acompanhamento de obras e reformas em andamento, oferecendo soluções inteligentes tanto para profissionais da área da construção quanto para clientes que buscam realizar obras de forma organizada e eficiente. Com o Caça Obras, você pode encontrar projetos de construção e reformas próximas a você, obter orçamentos detalhados e acompanhar o progresso das obras em tempo real.
+      </p>
+      <p><strong>Contato:</strong> <a href="mailto:suporte.desksolutions@gmail.com">suporte.desksolutions@gmail.com</a></p>
+      <p>
+        <strong>Política de Privacidade:</strong> Leia nossa política de privacidade completa em: <a href="#">Política de Privacidade</a>
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Desk Solutions - Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
